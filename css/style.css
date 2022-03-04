@@ -5,45 +5,21 @@
 }
 
 @font-face {
-  font-family: Open Sans R;
-  src: url(../fonts/OpenSans-Regular.woff);
+  font-family: OpenSans;
+  src: url("/fonts/OpenSans-Regular.woff") format('woff');
+  src: url("/fonts/OpenSans-Regular.woff2") format('woff2');
+  src: url("/fonts/OpenSans-Regular.ttf") format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Open Sans RW2;
-  src: url(../fonts/OpenSans-Regular.woff2);
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Open Sans Rttf;
-  src: url(../fonts/OpenSans-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Open Sans B;
-  src: url(../fonts/OpenSans-Bold.woff);
+  font-family: OpenSans;
+  src: url("/fonts/OpenSans-Bold.woff") format('woff');
+  src: url("/fonts/OpenSans-Bold.woff2") format('woff2');
+  src: url("/fonts/OpenSans-Bold.ttf") format('truetype');
   font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Open Sans BW2;
-  src: url(../fonts/OpenSans-Bold.woff2);
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Open Sans Bttf;
-  src: url(../fonts/OpenSans-Bold.ttf);
-  font-weight: 700;
-  font-style: normal;
+  font-style: bold;
 }
 
 /*--------Header start--------*/
@@ -141,9 +117,7 @@
 
 /*----------Trends---------*/
 
-.name-trends,
-.name-shop,
-.form-name {
+.name-trends {
   display: flex;
   font-size: 20px;
   color: #0f0d0e;
@@ -158,9 +132,7 @@
   z-index: 0;
 }
 
-.name-trends::after,
-.name-shop::after,
-.form-name::after {
+.name-trends::after  {
   content: "";
   position: absolute;
   width: 66px;
@@ -173,6 +145,10 @@
 
 .blocks-trends {
   display: flex;
+}
+
+.mask-trend {
+background-size: cover;
 }
 
 .trend1 {
@@ -221,7 +197,7 @@
 .inside-trend {
   align-items: stretch;
 
-  width: 370px;
+  /*width: 370px;*/
   background-color: rgba(0, 0, 0, 0);
   border: 3px solid #b59f5b;
   margin-right: 20px;
@@ -693,6 +669,32 @@
   margin-bottom: 63px;
 }
 
+.name-shop {
+  display: flex;
+  font-size: 20px;
+  color: #0f0d0e;
+  margin-bottom: 49px;
+  font-weight: 700;
+  font-family: "Open Sans B";
+
+  justify-content: center;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 0;
+}
+
+.name-shop::after {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  z-index: 1;
+
+  margin-top: 31px;
+}
+
 .our-shop {
   display: flex;
   max-width: 1200px;
@@ -906,6 +908,32 @@
   width: 390px;
   min-height: 589px;
   background-color: #ffffff;
+}
+
+.form-name {
+  display: flex;
+  font-size: 20px;
+  color: #0f0d0e;
+  margin-bottom: 49px;
+  font-weight: 700;
+  font-family: "Open Sans B";
+
+  justify-content: center;
+  text-transform: uppercase;
+
+  position: relative;
+  z-index: 0;
+}
+
+.form-name::after {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  z-index: 1;
+
+  margin-top: 31px;
 }
 
 .form-inside {
